@@ -1,5 +1,10 @@
+:root{
+    --color-pricipal : #000000;
+    --color-secundario:  rgba(187,187, 187);
+}
+
 .body{
-    background-color:beige;
+    background-color:var(--color-secundario);
     /*
     
     */
@@ -9,10 +14,11 @@
     background-image: url(../proyecto/img/fodo.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size:center;
+    background-size:cover;
 }
 
-a,p,label,.card-title {
+
+a,p,label,.card-title,h1,h2,h3,h5,h6{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: aliceblue !important;
 }
@@ -26,13 +32,36 @@ a,p,label,.card-title {
 
 .card{
     border-radius: 15px;
-    background-color: black !important;
+    background-color: var(--color-pricipal)!important;
 }
 
 section{
     border-radius: 15px;
+    background-color: rgba(187,187, 187, 0.3) !important;
 }
 
 .border{
-    border-color: black !important;
+    border-color: var(--color-pricipal) !important;
+}
+
+.login{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 40%;
+    background-color: rgba(187,187, 187, 0.3) !important;
+}
+
+
+.img-login{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.btn-principal{
+    color: var(--color-secundario);
+    background-color: var(--color-pricipal);
+    border-color: var(--color-pricipal);
 }
