@@ -1,6 +1,7 @@
 :root{
     --color-pricipal : #000000;
     --color-secundario:  rgba(187,187, 187);
+    --color-background:  rgba(187,187, 187, 0.5);
 }
 
 .body{
@@ -37,7 +38,7 @@ a,p,label,.card-title,h1,h2,h3,h5,h6{
 
 section{
     border-radius: 15px;
-    background-color: rgba(187,187, 187, 0.3) !important;
+    background-color: var(--color-background)!important;
 }
 
 .border{
@@ -48,9 +49,22 @@ section{
     margin-left: auto !important;
     margin-right: auto !important;
     width: 40%;
-    background-color: rgba(187,187, 187, 0.3) !important;
+    background-color: var(--color-background) !important;
 }
 
+.contacto{
+    margin: auto auto !important;
+    width: 40%;
+    background-color:var(--color-background) !important;
+}
+
+.titleCard{
+    border-radius: 20px;
+    background-color: var(--color-pricipal);
+    margin-left: auto !important;
+    margin-right: auto !important;
+    height: 4%;
+}
 
 .img-login{
     margin-left: auto;
@@ -64,4 +78,16 @@ section{
     color: var(--color-secundario);
     background-color: var(--color-pricipal);
     border-color: var(--color-pricipal);
+}
+
+.publicity{
+    width: 650px;
+    height: 350px;
+}
+
+#publicidad{
+    margin-left: auto !important; 
+    margin-right: auto !important;
+    width: 80% !important;
+    height: 30% !important;
 }
